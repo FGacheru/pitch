@@ -1,14 +1,32 @@
 import os
 
 class Config:
+    """
+    general configuration parent class
+    """
     
     
     
-class ProdConfig(Config):    
+class ProdConfig(Config):
+    """
+    production configuration child clas
+
+    Args:
+       config: The parent configuration class with general configuration settings
+    """
+    pass
     
     
     
-class DevConfig(Config):    
+    
+class DevConfig(Config):
+    """
+    development configuration child class
+
+    Args:
+        Config: The parent configuration class with General configuration settings.
+    """
+    DEBUG = True    
     
     
     
