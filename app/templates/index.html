@@ -1,0 +1,47 @@
+{% extends 'base.html'%}
+{% block styles%} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> 
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron" style="margin-top:0; background-color: navajowhite;">
+    <p class="text-center"  style="font-weight: bolder; padding: 20px 20px 0px 0px;">Pitch of The Day</p>
+  <h2 class="text-center" >“ Get busy living or get busy dying.”</h2>
+  <p class="text-center"> — Stephen King.</p>
+</div> 
+
+<body style="background-color: skyblue">
+
+  <div class="container">  
+    <div class="d-flex justify-content-center row">
+      <div class="card-groups">      
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bolder; font-size: 20px;">Love Pitch</h5>
+            <p class="card-text"> I’m never ever giving you up, I’m never ever leaving you. Instead I’ll forever and ever love and cherish you. </p>
+            <button type="button" class="btn btn-outline-primary"><a href="../pitch/">Enter a New Pitch</a></button><br><br>
+            <button type="button" class="btn btn-outline-primary"><a href="/category/Love">Read More</a></button>
+        </div>
+        <br>
+        <br>
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bolder; font-size: 20px;">Life Pitch</h5>
+            <p class="card-text">“You've gotta dance like there's nobody watching,
+                Love like you'll never be hurt,
+                Sing like there's nobody listening,
+                And live like it's heaven on earth.”</p> <br>
+            <button type="button" class="btn btn-outline-primary"><a href="../pitch/">Enter a New Pitch</a></button><br><br>
+            <button type="button" class="btn btn-outline-primary"><a href="/category/Life">Read More</a></button>
+          </div>
+          <br>
+          <br>
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bolder; font-size: 20px;">Haters Pitch</h5>
+            <p class="card-text">When they see other people improving their life and becoming successful, its a direct reflection to them of what they should be doing but are not.</p>
+              <button type="button" class="btn btn-outline-primary"><a href="../pitch/">Enter a New Pitch</a></button><br><br>
+            <button type="button" class="btn btn-outline-primary"><a href="/category/Haters">Read More</a></button>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+  {% endblock%}
